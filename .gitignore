@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+captures/
+*.pcapng
+*.log
+URSA-MINOR-32-Throttle-Metal---32-PAC-Metal-USB-DESCRIPTOR-MAP/
+nul

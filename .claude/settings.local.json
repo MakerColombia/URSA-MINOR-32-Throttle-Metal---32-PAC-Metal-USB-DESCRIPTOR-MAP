@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\test_usb1.pcapng\" -Y \"usb.device_address == 12 && usb.endpoint_address.direction == 0\" -T fields -e frame.number -e usb.endpoint_address -e usb.data_len -e usb.capdata)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\lcd_capture.pcapng\" -Y \"usb.device_address == 12 && usb.endpoint_address.direction == 0 && usb.data_len > 0\" -T fields -e frame.number -e usb.endpoint_address -e usb.data_len)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\lcd_capture.pcapng\" -Y \"usb.device_address == 12 && usb.endpoint_address == 0x02 && usb.data_len == 64\" -T fields -e frame.number -e usb.capdata)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\lcd_capture.pcapng\" -Y \"frame.number == 69\" -x)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\lcd_capture.pcapng\" -Y \"usb.device_address == 12 && usb.endpoint_address == 0x02 && usb.data_len == 64\" -x)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\lcd_capture.pcapng\" -Y \"usb.device_address == 12 && usb.endpoint_address == 0x02\" -x)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -i 13 -a duration:10 -w \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\L_0_0_capture.pcapng\")",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\L_0_0_capture.pcapng\" -Y \"usb.device_address == 12 && usb.endpoint_address == 0x02 && usb.data_len == 64\" -x)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\L_0_0_capture.pcapng\" -Y \"usb.device_address == 12 && usb.endpoint_address == 0x02\" -x)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\L_0_0_capture.pcapng\" -Y \"usb.idVendor == 0x4098\" -T fields -e usb.device_address -e usb.endpoint_address)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -i 13 -a duration:15 -w \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\trim_values_capture.pcapng\")",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\trim_values_capture.pcapng\" -Y \"usb.idVendor == 0x4098\" -T fields -e usb.device_address)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -r \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\trim_values_capture.pcapng\" -Y \"usb.device_address == 14 && usb.endpoint_address == 0x02 && usb.data_len == 64\" -x)",
+      "Bash(python parse_capture.py:*)",
+      "Bash(\"C:\\\\Program Files\\\\Wireshark\\\\tshark.exe\" -i 13 -a duration:15 -w \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\captures\\\\L_values_capture.pcapng\")",
+      "Bash(python analyze_segments.py:*)",
+      "Bash(python:*)",
+      "Bash(del \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\QUICKSTART_LCD.md\")",
+      "Bash(del \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\Docs\\\\LCD_PROTOCOL.md\")",
+      "Bash(del \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\Docs\\\\LCD_PROTOCOL_STATUS.md\")",
+      "Bash(del \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\Docs\\\\Report_0xF0_LCD_Analysis.md\")",
+      "Bash(del \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\Docs\\\\Phase5_LCD_Final_Report.md\")",
+      "Bash(del \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\Docs\\\\LCD_Protocol_Firmware_Comparison.md\")",
+      "Bash(del \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\Docs\\\\HID_Technical_Reference.md\")",
+      "Bash(del \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\Docs\\\\Report_0x02_Complete_Mapping.md\")",
+      "Bash(del \"D:\\\\simbridge\\\\github\\\\ursa minor 32 firmware 2\\\\Docs\\\\Project_Specification_file_ursa32.md\")"
+    ]
+  }
+}
