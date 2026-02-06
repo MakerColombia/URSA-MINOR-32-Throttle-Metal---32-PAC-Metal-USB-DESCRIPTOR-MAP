@@ -448,7 +448,7 @@ def send_lcd(device, side, integer, fractional, counter=0):
 
 ### Known Limitations
 
-- Formula verified against all 20 captured values (integers 0 and 1). Integers 2-9 are calculated from the same generalized formula but **not yet verified on hardware**.
+- Formula verified against all 20 captured values (integers 0 and 1). Integers 2-9 are calculated from the same generalized formula and **verified on hardware**.
 - Decimal point display is implicit (always shown between integer and fractional).
 - The display shows one side at a time; to update both L and R, send two DATA+COMMIT sequences.
 
